@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Panel interno · Proyectos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css" />
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <header class="admin-header">
+    <a href="index.html" class="brand">EM<span>.</span></a>
+    <div><p>Panel interno</p><strong>Proyectos e imágenes</strong></div>
+    <a class="button secondary" href="index.html">Ver portafolio</a>
+  </header>
+  <main class="admin-shell">
+    <aside class="sidebar">
+      <section class="panel connection-panel">
+        <p class="eyebrow">Publicación en GitHub</p>
+        <h1>Contenido del portafolio</h1>
+        <p class="muted">Administra proyectos, imágenes y enlaces. El token se conserva únicamente durante esta sesión del navegador.</p>
+        <label>Repositorio<input id="repository" value="thinkfashz/Portafolio-" autocomplete="off" /></label>
+        <label>Rama<input id="branch" value="main" autocomplete="off" /></label>
+        <label>Token personal de GitHub<input id="token" type="password" placeholder="github_pat_..." autocomplete="off" /></label>
+        <div class="button-row"><button id="connectButton" class="button primary" type="button">Conectar y cargar</button><button id="loadLocalButton" class="button secondary" type="button">Cargar archivo local</button></div>
+        <input id="localJsonInput" type="file" accept="application/json" hidden />
+        <p id="connectionStatus" class="status" role="status">Puedes editar primero y conectar al publicar.</p>
+      </section>
+      <section class="panel list-panel">
+        <div class="panel-heading"><div><p class="eyebrow">Listado</p><h2>Proyectos</h2></div><button id="newProjectButton" class="icon-button" type="button" aria-label="Crear proyecto">+</button></div>
+        <div id="projectList" class="project-list"></div>
+      </section>
+    </aside>
+    <section class="workspace">
+      <div class="workspace-top"><div><p class="eyebrow">Editor</p><h2 id="editorTitle">Nuevo proyecto</h2></div><div class="button-row"><button id="duplicateButton" class="button secondary" type="button">Duplicar</button><button id="deleteButton" class="button danger" type="button">Eliminar</button></div></div>
+      <div class="editor-grid">
+        <form id="projectForm" class="panel form-panel">
+          <div class="form-grid two-columns"><label>Nombre del proyecto<input id="name" required maxlength="80" /></label><label>Identificador<input id="id" required pattern="[a-z0-9-]+" maxlength="80" /></label></div>
+          <div class="form-grid two-columns"><label>Categoría<input id="category" placeholder="E-commerce, SaaS, plataforma..." /></label><label>Estado<input id="status" placeholder="Funcional, avanzado..." /></label></div>
+          <label>Descripción<textarea id="description" rows="5" maxlength="500"></textarea></label>
+          <div class="form-grid two-columns"><label>URL del proyecto<input id="siteUrl" type="url" placeholder="https://..." /></label><label>URL del repositorio<input id="repoUrl" type="url" placeholder="https://github.com/..." /></label></div>
+          <label>Tecnologías <span class="hint">Separadas por comas</span><input id="technologies" placeholder="Next.js, React, TypeScript" /></label>
+          <label>Puntos destacados <span class="hint">Uno por línea</span><textarea id="highlights" rows="4" placeholder="Resultado principal&#10;Función importante&#10;Tecnología o mejora"></textarea></label>
+          <fieldset><legend>Imagen de presentación</legend><div class="image-mode-tabs" role="tablist"><button class="mode-tab active" type="button" data-mode="url">Usar URL</button><button class="mode-tab" type="button" data-mode="upload">Subir a GitHub</button></div><div id="urlMode" class="image-mode active"><label>URL de la imagen<input id="imageUrl" type="url" placeholder="https://.../captura.webp" /></label></div><div id="uploadMode" class="image-mode"><label class="dropzone" for="imageFile"><input id="imageFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif" /><strong>Seleccionar imagen</strong><span>PNG, JPG, WebP o GIF. Se guardará en assets/projects/.</span></label><p id="fileName" class="hint"></p></div><label>Texto alternativo<input id="imageAlt" placeholder="Vista del proyecto en escritorio" /></label></fieldset>
+          <div class="switch-grid"><label class="switch"><input id="featured" type="checkbox" /><span></span>Proyecto destacado</label><label class="switch"><input id="published" type="checkbox" checked /><span></span>Visible en el portafolio</label></div>
+          <div class="form-actions"><button class="button secondary" id="saveDraftButton" type="button">Guardar borrador local</button><button class="button primary" type="submit">Guardar y publicar</button></div>
+        </form>
+        <aside class="panel preview-panel"><div class="preview-toolbar"><span></span><span></span><span></span><small>Vista previa</small></div><article id="projectPreview" class="project-preview-card"><div id="previewImage" class="preview-image"><span>Imagen del proyecto</span></div><div class="preview-content"><div class="preview-meta"><span id="previewCategory">Categoría</span><b id="previewStatus">Estado</b></div><h3 id="previewName">Nombre del proyecto</h3><p id="previewDescription">La descripción aparecerá aquí.</p><div id="previewTechnologies" class="chips"></div></div></article><div class="help-card"><strong>Publicación segura</strong><p>Usa un token de acceso específico para este repositorio, con permiso de lectura y escritura de contenidos. No lo incluyas en el código ni lo compartas.</p></div></aside>
+      </div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
