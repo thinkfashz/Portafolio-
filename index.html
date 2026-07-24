@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portafolio de Eduardo: desarrollo de software, inteligencia artificial, automatización y sistemas de negocio." />
+  <title>Eduardo — Software Developer & AI Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/htmx.org@2.0.4" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">EF<span>.</span></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav id="menu" class="site-nav" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#stack">Tecnologías</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <p class="eyebrow">Software · IA · Automatización</p>
+      <h1>Diseño productos digitales que convierten problemas reales en sistemas funcionales.</h1>
+      <p class="hero-copy">Desarrollador autodidacta con experiencia práctica en aplicaciones web, comercio electrónico, plataformas empresariales e inteligencia artificial aplicada al desarrollo.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#proyectos">Ver proyectos</a>
+        <a class="button button-light" href="https://github.com/thinkfashz" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <div class="hero-metrics" aria-label="Resumen profesional">
+        <article><strong>4+</strong><span>productos destacados</span></article>
+        <article><strong>2023–hoy</strong><span>desarrollo con IA</span></article>
+        <article><strong>Mobile first</strong><span>interfaces responsivas</span></article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section projects-section">
+      <div class="section-heading">
+        <p class="eyebrow">Trabajo seleccionado</p>
+        <h2>Proyectos con enfoque comercial y de negocio</h2>
+        <p>Cada proyecto muestra una necesidad distinta: presupuestos, catálogo, e-commerce, navegación, experiencia móvil y sistemas empresariales.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-preview preview-fabrick">
+            <div class="browser-bar"><span></span><span></span><span></span><small>solucionesfabrick.com</small></div>
+            <div class="preview-copy"><span>Plataforma de servicios</span><strong>Presupuestos claros, productos y operación.</strong></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Producto principal</span><span>Nivel avanzado</span></div>
+            <h3>Soluciones Fabrick</h3>
+            <p>Plataforma web orientada a servicios para construcción y mantenimiento. Integra captación, presupuestos, productos, clientes, flujos comerciales y operación.</p>
+            <ul class="feature-list">
+              <li>Next.js 15, React 19 y TypeScript</li>
+              <li>Insforge, Mercado Pago, correo transaccional y analítica</li>
+              <li>Pruebas con Vitest y Playwright</li>
+              <li>Experiencias 3D, editor visual y arquitectura escalable</li>
+            </ul>
+            <div class="project-actions">
+              <a class="text-link" href="https://solucionesfabrick.com" target="_blank" rel="noreferrer">Abrir demo ↗</a>
+              <a class="text-link" href="https://github.com/thinkfashz/solucionfabrick2.5" target="_blank" rel="noreferrer">Ver repositorio ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview preview-omnifix">
+            <div class="browser-bar"><span></span><span></span><span></span><small>omnifixshop.vercel.app</small></div>
+            <div class="preview-copy"><span>E-commerce tecnológico</span><strong>Catálogo premium, carrito y navegación móvil.</strong></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>E-commerce</span><span>Nivel avanzado</span></div>
+            <h3>Omnifix</h3>
+            <p>Tienda online enfocada en productos tecnológicos, con catálogo, carrito, búsqueda, categorías, cuenta, contacto y experiencia responsive.</p>
+            <ul class="feature-list">
+              <li>Next.js 15, React 19 y TypeScript</li>
+              <li>Cloudflare/OpenNext y Vercel Analytics</li>
+              <li>Mercado Pago, Sentry, correo y autenticación</li>
+              <li>Pruebas, despliegue y herramientas de administración</li>
+            </ul>
+            <div class="project-actions">
+              <a class="text-link" href="https://omnifixshop.vercel.app" target="_blank" rel="noreferrer">Abrir demo ↗</a>
+              <a class="text-link" href="https://github.com/thinkfashz/omnifix" target="_blank" rel="noreferrer">Ver repositorio ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview preview-osart">
+            <div class="browser-bar"><span></span><span></span><span></span><small>Osart</small></div>
+            <div class="preview-copy"><span>Catálogo industrial</span><strong>Interfaz visual para productos técnicos y ofertas.</strong></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Catálogo</span><span>Nivel intermedio-avanzado</span></div>
+            <h3>Osart</h3>
+            <p>Experiencia comercial para productos industriales, con catálogo dinámico, navegación, fichas visuales y enfoque de marca.</p>
+            <ul class="feature-list">
+              <li>Next.js 14, React 18 y TypeScript</li>
+              <li>Supabase para datos</li>
+              <li>Integración con Google GenAI</li>
+              <li>Animaciones con Framer Motion</li>
+            </ul>
+            <div class="project-actions">
+              <a class="text-link" href="https://github.com/thinkfashz/Osart" target="_blank" rel="noreferrer">Ver repositorio ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview preview-vivazza">
+            <div class="browser-bar"><span></span><span></span><span></span><small>Vivazza</small></div>
+            <div class="preview-copy"><span>Experiencia gastronómica</span><strong>Menú visual, fichas de producto y experiencia móvil.</strong></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Food commerce</span><span>Nivel funcional</span></div>
+            <h3>Vivazza</h3>
+            <p>Aplicación orientada a restaurante con productos destacados, ficha detallada, navegación móvil y experiencia de compra.</p>
+            <ul class="feature-list">
+              <li>React 19, TypeScript y Vite</li>
+              <li>Diseño mobile first</li>
+              <li>Componentes reutilizables</li>
+              <li>Presentación visual de productos</li>
+            </ul>
+            <div class="project-actions">
+              <a class="text-link" href="https://github.com/thinkfashz/vivazza" target="_blank" rel="noreferrer">Ver repositorio ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="perfil" class="section profile-section">
+      <div class="section-heading">
+        <p class="eyebrow">Perfil profesional</p>
+        <h2>Desarrollo software con criterio de negocio.</h2>
+      </div>
+      <div class="profile-grid">
+        <p class="profile-lead">No me limito a escribir interfaces. Analizo procesos, ordeno flujos, defino soluciones y utilizo inteligencia artificial para acelerar investigación, arquitectura, programación, documentación, pruebas y mejora continua.</p>
+        <div class="capabilities">
+          <article><strong>Resolución de problemas</strong><span>Transformo necesidades poco estructuradas en productos utilizables.</span></article>
+          <article><strong>Aprendizaje autónomo</strong><span>Incorporo tecnologías nuevas mediante documentación, experimentación y proyectos reales.</span></article>
+          <article><strong>Visión de sistemas</strong><span>Conecto producto, experiencia, operación, datos, ventas y automatización.</span></article>
+          <article><strong>IA aplicada</strong><span>Trabajo con ChatGPT, Claude, Gemini, Copilot, Ollama, Hermes y otras herramientas.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section stack-section">
+      <div class="section-heading">
+        <p class="eyebrow">Tecnologías</p>
+        <h2>Stack moderno para construir, desplegar y mejorar productos.</h2>
+      </div>
+      <div class="stack-grid">
+        <article><h3>Frontend</h3><p>React, Next.js, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Framer Motion.</p></article>
+        <article><h3>Backend y datos</h3><p>Node.js, APIs REST, Firebase, Firestore, Supabase, Insforge, autenticación y almacenamiento.</p></article>
+        <article><h3>Cloud y medios</h3><p>Vercel, Cloudflare, Cloudinary, Firebase Hosting, analítica, correo transaccional y observabilidad.</p></article>
+        <article><h3>IA y automatización</h3><p>ChatGPT, Claude, Gemini, GitHub Copilot, Ollama, Hermes, Google Flow, Higgsfield y desarrollo asistido por LLM.</p></article>
+        <article><h3>Calidad</h3><p>Git, GitHub, VS Code, Vitest, Playwright, TypeScript, validación de despliegues y pruebas funcionales.</p></article>
+        <article><h3>Diseño de producto</h3><p>Arquitectura de software, UX/UI, catálogos, e-commerce, CRM, sistemas empresariales y flujos comerciales.</p></article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <p class="eyebrow">Disponible para oportunidades</p>
+      <h2>Busco proyectos y equipos donde la tecnología y la IA resuelvan problemas reales.</h2>
+      <p>Perfil adecuado para desarrollo web, e-commerce, automatización, aplicaciones empresariales, prototipado y productos digitales con inteligencia artificial.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/thinkfashz" target="_blank" rel="noreferrer">Revisar GitHub</a>
+        <a class="button button-light" href="mailto:contacto@solucionesfabrick.com">Escribir por correo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Eduardo · Software Developer & AI Solutions</span>
+    <span>Construido con HTML, CSS, JavaScript y HTMX.</span>
+  </footer>
+</body>
+</html>
