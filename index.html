@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#070b14">
-  <meta name="description" content="Eduardo Micolta crea productos web, automatizaciones y soluciones con inteligencia artificial.">
+  <meta name="description" content="Eduardo Micolta crea productos web, e-commerce y soluciones con inteligencia artificial.">
   <meta name="author" content="Eduardo Micolta">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CL">
-  <meta property="og:title" content="Eduardo Micolta — Full Stack & AI Solutions">
-  <meta property="og:description" content="Productos digitales, automatización e inteligencia artificial.">
+  <meta property="og:title" content="Eduardo Micolta — Full Stack & AI">
+  <meta property="og:description" content="Productos digitales claros, rápidos y escalables.">
   <meta property="og:url" content="https://eduardo-portafolio-think-fastzs-projects.vercel.app">
   <meta property="og:image" content="https://eduardo-portafolio-think-fastzs-projects.vercel.app/og-card.svg">
   <meta name="twitter:card" content="summary_large_image">
@@ -23,71 +23,58 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="app.js" defer></script>
-  <title>Eduardo Micolta — Full Stack & AI Solutions</title>
+  <title>Eduardo Micolta — Full Stack & AI</title>
 </head>
 <body>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="Inicio">EM<span>.</span></a>
-    <nav class="desktop-nav" aria-label="Navegación principal">
-      <a href="#proyectos">Proyectos</a><a href="#stack">Stack</a><a href="#contacto">Contacto</a>
-    </nav>
-    <div class="header-actions"><a class="admin-link" href="/admin">Admin</a><a class="contact-mini" href="mailto:f.eduardomicolta@gmail.com">Hablemos</a></div>
+    <a class="brand" href="#inicio">EM<span>.</span></a>
+    <nav class="desktop-nav"><a href="#proyectos">Proyectos</a><a href="#capacidades">Capacidades</a><a href="#contacto">Contacto</a></nav>
+    <div class="header-actions"><a class="admin-link" href="/admin/">Admin</a><a class="contact-mini" href="mailto:f.eduardomicolta@gmail.com">Hablemos</a></div>
   </header>
 
   <main>
-    <section id="inicio" class="screen hero">
+    <section id="inicio" class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Full Stack Developer · IA</p>
-        <h1>Creo software que <span>resuelve y escala.</span></h1>
-        <p class="lead">Web, e-commerce y automatización para negocios reales.</p>
+        <p class="eyebrow" data-content="hero.eyebrow">Full Stack Developer · IA</p>
+        <h1 data-content="hero.title">Construyo productos digitales que funcionan.</h1>
+        <p class="lead" data-content="hero.lead">Web, comercio y automatización.</p>
         <div class="actions"><a class="btn primary" href="#proyectos">Ver proyectos</a><a class="btn secondary" href="mailto:f.eduardomicolta@gmail.com">Contactar</a></div>
-        <div class="trust-row"><span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>IA</span></div>
       </div>
       <aside class="hero-card glass">
         <div class="status"><i></i> Disponible</div>
-        <small>Eduardo Micolta</small><strong>Software Developer</strong>
-        <div class="hero-meta"><div><span>Ubicación</span><b>Linares, Chile</b></div><div><span>Experiencia</span><b>5+ años</b></div><div><span>Enfoque</span><b>Web · SaaS · IA</b></div></div>
+        <strong data-content="profile.role">Software Developer</strong>
+        <div class="hero-meta"><div><span>Base</span><b>Linares, Chile</b></div><div><span>Experiencia</span><b>5+ años</b></div><div><span>Especialidad</span><b>Web · SaaS · IA</b></div></div>
       </aside>
     </section>
 
-    <section id="impacto" class="screen section-shell metrics-section">
-      <div class="metrics-grid">
-        <article><strong data-count="5">0</strong><span>años desarrollando</span></article>
-        <article><strong data-count="40">0</strong><span>proyectos</span></article>
-        <article><strong data-count="1500">0</strong><span>iteraciones</span></article>
-        <article><strong>CL</strong><span>disponible en Chile</span></article>
-      </div>
+    <section id="impacto" class="section-shell metrics-section">
+      <div class="metrics-grid"><article><strong data-count="5">0</strong><span>años</span></article><article><strong data-count="40">0</strong><span>proyectos</span></article><article><strong data-count="1500">0</strong><span>iteraciones</span></article></div>
     </section>
 
-    <section id="proyectos" class="screen projects-section">
+    <section id="proyectos" class="projects-section">
       <div class="section-shell">
-        <div class="section-heading"><p class="eyebrow">Trabajo seleccionado</p><h2>Productos destacados.</h2></div>
+        <div class="section-heading"><p class="eyebrow">Selección</p><h2 data-content="projects.heading">Proyectos.</h2></div>
         <div class="project-grid">
-          <article class="project-card"><a class="project-preview" href="https://solucionesfabrick.com" target="_blank" rel="noreferrer"><iframe src="https://solucionesfabrick.com" title="Soluciones Fabrick" loading="lazy" tabindex="-1"></iframe><span>Abrir ↗</span></a><div class="project-info"><small>Plataforma</small><h3>Soluciones Fabrick</h3><p>Ventas, presupuestos y operación.</p><div class="chips"><span>Next.js</span><span>TypeScript</span><span>Pagos</span></div></div></article>
-          <article class="project-card"><a class="project-preview" href="https://omnifixshop.vercel.app" target="_blank" rel="noreferrer"><iframe src="https://omnifixshop.vercel.app" title="Omnifix" loading="lazy" tabindex="-1"></iframe><span>Abrir ↗</span></a><div class="project-info"><small>E-commerce</small><h3>Omnifix</h3><p>Catálogo, carrito y administración.</p><div class="chips"><span>Next.js</span><span>React</span><span>Cloudflare</span></div></div></article>
-          <article class="project-card compact"><div class="generated-preview"><b>OSART</b><span>Industria</span></div><div class="project-info"><small>Catálogo</small><h3>Osart</h3><p>Búsqueda técnica con IA.</p><div class="chips"><span>Next.js</span><span>Supabase</span><span>GenAI</span></div></div></article>
-          <article class="project-card compact"><div class="generated-preview"><b>VIVAZZA</b><span>Food commerce</span></div><div class="project-info"><small>Comercio</small><h3>Vivazza</h3><p>Compra rápida para gastronomía.</p><div class="chips"><span>React</span><span>TypeScript</span><span>Vite</span></div></div></article>
+          <article class="project-card"><a class="project-preview" href="https://solucionesfabrick.com" target="_blank" rel="noreferrer"><iframe src="https://solucionesfabrick.com" title="Soluciones Fabrick" loading="lazy" tabindex="-1"></iframe><span>Abrir ↗</span></a><div class="project-info"><small>Plataforma</small><h3>Soluciones Fabrick</h3><p>Ventas y operación.</p></div></article>
+          <article class="project-card"><a class="project-preview" href="https://omnifixshop.vercel.app" target="_blank" rel="noreferrer"><iframe src="https://omnifixshop.vercel.app" title="Omnifix" loading="lazy" tabindex="-1"></iframe><span>Abrir ↗</span></a><div class="project-info"><small>E-commerce</small><h3>Omnifix</h3><p>Catálogo y compras.</p></div></article>
+          <article class="project-card compact"><div class="generated-preview"><b>OSART</b><span>Industria</span></div><div class="project-info"><small>IA</small><h3>Osart</h3><p>Búsqueda técnica.</p></div></article>
+          <article class="project-card compact"><div class="generated-preview"><b>VIVAZZA</b><span>Food commerce</span></div><div class="project-info"><small>Comercio</small><h3>Vivazza</h3><p>Compra rápida.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section id="stack" class="screen section-shell">
-      <div class="section-heading"><p class="eyebrow">Herramientas</p><h2>Stack.</h2></div>
-      <div class="stack-groups">
-        <article><h3>Frontend</h3><div><span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind</span></div></article>
-        <article><h3>Backend</h3><div><span>Node.js</span><span>Firebase</span><span>Supabase</span><span>APIs</span></div></article>
-        <article><h3>Cloud</h3><div><span>GitHub</span><span>Cloudflare</span><span>Vercel</span></div></article>
-        <article><h3>IA</h3><div><span>OpenAI</span><span>Claude</span><span>Gemini</span><span>Copilot</span></div></article>
-      </div>
+    <section id="capacidades" class="section-shell">
+      <div class="section-heading"><p class="eyebrow">Capacidades</p><h2>De idea a producto.</h2></div>
+      <div class="capability-grid"><article><b>Diseño</b><span>Interfaces claras</span></article><article><b>Desarrollo</b><span>React y Next.js</span></article><article><b>Backend</b><span>Datos y APIs</span></article><article><b>IA</b><span>Automatización útil</span></article></div>
     </section>
 
-    <section id="contacto" class="screen section-shell contact-section">
-      <div class="contact-card"><p class="eyebrow">Contacto</p><h2>Construyamos algo útil.</h2><div class="actions"><a class="btn primary" href="mailto:f.eduardomicolta@gmail.com">Enviar correo</a><a class="btn secondary" href="https://github.com/thinkfashz" target="_blank" rel="noreferrer">GitHub</a><a class="btn secondary" href="tel:+56966960729">Llamar</a></div></div>
+    <section id="contacto" class="section-shell contact-section">
+      <div class="contact-card"><p class="eyebrow">Contacto</p><h2 data-content="contact.heading">Hagamos algo útil.</h2><div class="actions"><a class="btn primary" href="mailto:f.eduardomicolta@gmail.com">Enviar correo</a><a class="btn secondary" href="https://github.com/thinkfashz" target="_blank" rel="noreferrer">GitHub</a></div></div>
     </section>
   </main>
 
-  <nav class="mobile-tabs" aria-label="Navegación móvil"><a href="#inicio">Inicio</a><a href="#proyectos">Apps</a><a href="#stack">Stack</a><a href="#contacto">Contacto</a></nav>
+  <nav class="mobile-tabs"><a href="#inicio">Inicio</a><a href="#proyectos">Apps</a><a href="#capacidades">Skills</a><a href="#contacto">Contacto</a></nav>
   <footer><span>Eduardo Micolta</span><span>Linares, Chile</span></footer>
 </body>
 </html>
