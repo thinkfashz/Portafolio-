@@ -1,129 +1,124 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="description" content="Portafolio de Eduardo Fabrick: software, e-commerce, automatización e inteligencia artificial aplicada." />
-  <meta name="theme-color" content="#0c0c0b" />
-  <title>Eduardo Fabrick — Software & AI Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Eduardo Micolta, Software Developer con más de 5 años de experiencia en Full Stack, IA, automatización, e-commerce y sistemas de negocio. Disponible para trabajar en Chile.">
+  <meta name="keywords" content="Software Developer, Full Stack Developer, React, Next.js, TypeScript, JavaScript, Node.js, Firebase, Supabase, Cloudflare, Vercel, Inteligencia Artificial, Automatización, Ecommerce, Chile">
+  <meta name="author" content="Eduardo Micolta">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:title" content="Eduardo Micolta — Software Developer & AI Solutions">
+  <meta property="og:description" content="Más de 5 años construyendo productos digitales, e-commerce, automatización y sistemas con IA. Linares, Chile · Permiso de trabajo vigente.">
+  <meta property="og:url" content="https://eduardo-portafolio-think-fastzs-projects.vercel.app">
+  <meta property="og:image" content="https://eduardo-portafolio-think-fastzs-projects.vercel.app/og-card.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eduardo Micolta — Software Developer">
+  <meta name="twitter:description" content="Full Stack, IA aplicada, automatización y productos digitales.">
+  <meta name="twitter:image" content="https://eduardo-portafolio-think-fastzs-projects.vercel.app/og-card.svg">
+  <link rel="canonical" href="https://eduardo-portafolio-think-fastzs-projects.vercel.app">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="app.js" defer></script>
+  <title>Eduardo Micolta — Software Developer & AI Solutions</title>
 </head>
 <body>
   <header class="topbar">
-    <a class="identity" href="#inicio" data-tab="inicio">
-      <span class="monogram">EF</span>
-      <span><strong>Eduardo Fabrick</strong><small>Software & AI Developer</small></span>
-    </a>
-    <a class="icon-link" href="https://github.com/thinkfashz" target="_blank" rel="noreferrer" aria-label="Abrir GitHub">↗</a>
+    <a class="brand" href="#inicio" aria-label="Inicio">EDUARDO<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a><a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#perfil">Perfil</a><a href="#estadisticas">Datos</a>
+    </nav>
+    <a class="contact-mini" href="mailto:f.eduardomicolta@gmail.com">Contactar</a>
   </header>
 
-  <main class="app-shell">
-    <section id="inicio" class="screen active-screen hero-screen" data-screen="inicio">
+  <main>
+    <section id="inicio" class="screen hero">
       <div class="hero-copy">
-        <span class="availability"><i></i> Disponible para oportunidades</span>
-        <p class="kicker">PORTAFOLIO FABRICK · 2026</p>
-        <h1>Eduardo.<br><em>Construyo sistemas</em><br>que resuelven.</h1>
-        <p>Desarrollador autodidacta especializado en productos web, e-commerce, automatización e inteligencia artificial aplicada.</p>
-        <div class="hero-actions">
-          <button class="primary-action" data-open-tab="proyectos">Ver aplicaciones</button>
-          <button class="secondary-action" data-open-tab="perfil">Conocer mi perfil</button>
+        <p class="eyebrow">Portafolio Fabrick · Linares, Chile</p>
+        <h1>Eduardo <span>Micolta</span></h1>
+        <h2>Software Developer · Full Stack · AI Solutions</h2>
+        <p class="lead">Más de 5 años convirtiendo necesidades de negocio en productos web, e-commerce, automatización y sistemas con inteligencia artificial.</p>
+        <div class="proof-row" aria-label="Datos principales">
+          <span><b>5+</b> años</span><span><b>40+</b> proyectos</span><span><b>1.500+</b> deploys*</span><span><b>Chile</b> permiso vigente</span>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="#proyectos">Ver aplicaciones</a>
+          <a class="btn" href="mailto:f.eduardomicolta@gmail.com">Enviar correo</a>
+          <a class="btn ghost" href="tel:+56966960729">Llamar</a>
         </div>
       </div>
-      <div class="hero-orbit" aria-hidden="true"><span>IA</span><span>WEB</span><span>DATA</span></div>
+      <aside class="hero-card">
+        <small>Perfil buscado</small>
+        <strong>Full Stack Developer</strong>
+        <p>React · Next.js · TypeScript · Node.js · Firebase · Supabase · Cloudflare · Vercel · IA aplicada</p>
+        <div class="availability"><i></i> Disponible para oportunidades</div>
+      </aside>
     </section>
 
-    <section id="proyectos" class="screen" data-screen="proyectos">
-      <header class="screen-heading">
-        <p class="kicker">APLICACIONES</p>
-        <h2>Productos funcionales, no ejercicios.</h2>
-        <p>Toca una previsualización para abrir la aplicación real.</p>
-      </header>
+    <section id="habilidades" class="screen compact-section">
+      <div class="section-title"><p class="eyebrow">Lo primero que un reclutador debe ver</p><h2>Habilidades y herramientas</h2></div>
+      <div class="skills-grid">
+        <article><b>Frontend</b><p>React, Next.js, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Framer Motion, GSAP.</p></article>
+        <article><b>Backend & Datos</b><p>Node.js, APIs REST, Firebase, Firestore, Supabase, Insforge, autenticación y almacenamiento.</p></article>
+        <article><b>Cloud & DevOps</b><p>Vercel, Cloudflare, Cloudinary, Git, GitHub, CI/CD, Sentry, analítica y despliegues.</p></article>
+        <article><b>IA & Automatización</b><p>ChatGPT, Claude, Gemini, GitHub Copilot, Ollama, Hermes, agentes y desarrollo asistido por LLM.</p></article>
+        <article><b>Calidad</b><p>Vitest, Playwright, TypeScript, pruebas funcionales, validación de despliegues y observabilidad.</p></article>
+        <article><b>Producto</b><p>E-commerce, CRM, UX/UI, sistemas empresariales, catálogos, automatización y arquitectura web.</p></article>
+      </div>
+    </section>
 
-      <div class="project-stack">
-        <article class="live-project">
+    <section id="proyectos" class="screen projects-section">
+      <div class="section-title"><p class="eyebrow">Aplicaciones reales</p><h2>Previsualiza y abre el producto</h2><p>Toca cada pantalla para visitar la aplicación. La vista en vivo depende de que el sitio permita mostrarse dentro de un iframe.</p></div>
+      <div class="project-grid">
+        <article class="project-card live-card">
           <a class="live-preview" href="https://solucionesfabrick.com" target="_blank" rel="noreferrer" aria-label="Abrir Soluciones Fabrick">
-            <iframe src="https://solucionesfabrick.com" loading="lazy" title="Previsualización de Soluciones Fabrick" tabindex="-1"></iframe>
-            <span class="preview-shield"><b>Abrir aplicación</b><small>solucionesfabrick.com ↗</small></span>
+            <iframe src="https://solucionesfabrick.com" title="Vista previa de Soluciones Fabrick" loading="lazy" tabindex="-1"></iframe>
+            <span class="open-label">Abrir aplicación ↗</span>
           </a>
-          <div class="project-copy">
-            <div class="project-title"><span>01</span><div><h3>Soluciones Fabrick</h3><p>Plataforma de servicios, presupuestos, productos y operación comercial.</p></div></div>
-            <div class="chips"><span>Next.js 15</span><span>React 19</span><span>TypeScript</span><span>Insforge</span><span>Mercado Pago</span><span>Playwright</span></div>
-          </div>
+          <div class="project-info"><div><small>Producto principal · Avanzado</small><h3>Soluciones Fabrick</h3></div><p>Plataforma de servicios, presupuestos, productos, clientes y operación.</p><div class="chips"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Mercado Pago</span><span>Playwright</span></div></div>
         </article>
-
-        <article class="live-project">
+        <article class="project-card live-card">
           <a class="live-preview" href="https://omnifixshop.vercel.app" target="_blank" rel="noreferrer" aria-label="Abrir Omnifix">
-            <iframe src="https://omnifixshop.vercel.app" loading="lazy" title="Previsualización de Omnifix" tabindex="-1"></iframe>
-            <span class="preview-shield"><b>Abrir aplicación</b><small>omnifixshop.vercel.app ↗</small></span>
+            <iframe src="https://omnifixshop.vercel.app" title="Vista previa de Omnifix" loading="lazy" tabindex="-1"></iframe>
+            <span class="open-label">Abrir aplicación ↗</span>
           </a>
-          <div class="project-copy">
-            <div class="project-title"><span>02</span><div><h3>Omnifix</h3><p>E-commerce tecnológico con catálogo, carrito, cuenta y pagos.</p></div></div>
-            <div class="chips"><span>Next.js</span><span>Cloudflare</span><span>Vercel</span><span>Sentry</span><span>Mercado Pago</span><span>Vitest</span></div>
-          </div>
+          <div class="project-info"><div><small>E-commerce · Avanzado</small><h3>Omnifix</h3></div><p>Tienda tecnológica con catálogo, carrito, búsqueda, pagos y administración.</p><div class="chips"><span>Next.js</span><span>React</span><span>Cloudflare</span><span>Sentry</span><span>Mercado Pago</span></div></div>
         </article>
-
-        <div class="compact-projects">
-          <a href="https://github.com/thinkfashz/Osart" target="_blank" rel="noreferrer"><b>Osart</b><span>Catálogo industrial · Next.js · Supabase · Google GenAI</span><i>↗</i></a>
-          <a href="https://github.com/thinkfashz/vivazza" target="_blank" rel="noreferrer"><b>Vivazza</b><span>Food commerce · React · TypeScript · Vite</span><i>↗</i></a>
-          <a href="https://github.com/thinkfashz/paneladmin" target="_blank" rel="noreferrer"><b>Panel Admin</b><span>Operación, datos y administración empresarial</span><i>↗</i></a>
-        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/thinkfashz/Osart" target="_blank" rel="noreferrer"><b>Osart</b><span>Catálogo industrial · Next.js · Supabase · Google GenAI</span><i>↗</i></a>
+        <a href="https://github.com/thinkfashz/vivazza" target="_blank" rel="noreferrer"><b>Vivazza</b><span>Food commerce · React · TypeScript · Vite</span><i>↗</i></a>
+        <a href="https://github.com/thinkfashz/paneladmin" target="_blank" rel="noreferrer"><b>Panel Admin</b><span>Gestión, operación y herramientas internas</span><i>↗</i></a>
       </div>
     </section>
 
-    <section id="perfil" class="screen" data-screen="perfil">
-      <header class="screen-heading">
-        <p class="kicker">PERFIL</p>
-        <h2>Aprendo, conecto y ejecuto.</h2>
-      </header>
-      <div class="profile-card">
-        <div class="profile-mark">EF</div>
-        <div><h3>Eduardo Fabrick</h3><p>Full Stack & AI Solutions Developer</p></div>
+    <section id="perfil" class="screen compact-section profile-section">
+      <div class="section-title"><p class="eyebrow">Currículum resumido</p><h2>Información profesional</h2></div>
+      <div class="profile-grid">
+        <article class="identity-card"><h3>Eduardo Micolta</h3><p>Desarrollador de software autodidacta, colombiano, residente en Linares, Chile, con permiso de trabajo vigente.</p><dl><div><dt>Experiencia</dt><dd>Más de 5 años</dd></div><div><dt>Ubicación</dt><dd>Linares, Chile</dd></div><div><dt>Nacionalidad</dt><dd>Colombiana</dd></div><div><dt>Disponibilidad</dt><dd>Laboral y proyectos</dd></div></dl></article>
+        <article class="xyz-card"><small>Método Google X-Y-Z</small><h3>Impacto antes que funciones</h3><ul><li><b>Construí</b> más de 40 proyectos y experimentos digitales, <b>acumulando más de 1.500 despliegues e iteraciones</b>, mediante desarrollo continuo, pruebas y mejora asistida por IA.</li><li><b>Transformé</b> procesos comerciales dispersos en productos utilizables, <b>integrando cotización, catálogo, pagos y operación</b> con Next.js, React, TypeScript y servicios cloud.</li><li><b>Aceleré</b> investigación, arquitectura, documentación y depuración, <b>incorporando IA generativa y agentes</b> al ciclo completo de desarrollo.</li></ul></article>
       </div>
-      <div class="bio-grid">
-        <article><small>ENFOQUE</small><p>Convierto necesidades poco estructuradas en aplicaciones funcionales y procesos digitales.</p></article>
-        <article><small>FORMACIÓN</small><p>Autodidacta. Aprendizaje mediante documentación, experimentación y proyectos reales.</p></article>
-        <article><small>IA APLICADA</small><p>ChatGPT, Claude, Gemini, GitHub Copilot, Ollama, Hermes, Google Flow e Higgsfield.</p></article>
-        <article><small>IDIOMAS</small><p>Español nativo e inglés técnico para documentación, APIs y herramientas.</p></article>
-      </div>
-      <div class="resume-block">
-        <h3>Currículum resumido</h3>
-        <p><b>2023 — hoy</b><br>Desarrollo independiente de plataformas web, e-commerce, herramientas empresariales, automatizaciones y productos asistidos por IA.</p>
-        <p><b>Stack principal</b><br>React, Next.js, TypeScript, Node.js, Firebase, Supabase, Insforge, Vercel, Cloudflare y Cloudinary.</p>
-        <a href="mailto:contacto@solucionesfabrick.com">Contactar por correo ↗</a>
-      </div>
+      <div class="contact-strip"><a href="mailto:f.eduardomicolta@gmail.com">f.eduardomicolta@gmail.com</a><a href="tel:+56966960729">+56 9 6696 0729</a><a href="https://github.com/thinkfashz" target="_blank" rel="noreferrer">github.com/thinkfashz</a></div>
     </section>
 
-    <section id="estadisticas" class="screen" data-screen="estadisticas">
-      <header class="screen-heading">
-        <p class="kicker">TRAYECTORIA</p>
-        <h2>Construcción constante.</h2>
-        <p>Cifras aproximadas declaradas a partir de mi actividad práctica.</p>
-      </header>
-      <div class="stats-grid">
-        <article><strong data-count="3">0</strong><span>años desarrollando con IA</span></article>
-        <article><strong data-count="40">0</strong><span>repositorios y experimentos</span></article>
-        <article><strong data-count="600">0</strong><span>iteraciones de producto</span></article>
-        <article><strong data-count="1500">0</strong><span>deploys y pruebas acumuladas</span></article>
-      </div>
-      <div class="timeline">
-        <article><span>2023</span><p>Inicio del desarrollo intensivo asistido por inteligencia artificial.</p></article>
-        <article><span>2024–2025</span><p>Construcción de e-commerce, catálogos, presupuestos y sistemas de negocio.</p></article>
-        <article><span>2026</span><p>Arquitecturas más completas, pruebas, despliegues, IA local y automatización.</p></article>
-      </div>
+    <section id="estadisticas" class="screen stats-section">
+      <div class="section-title"><p class="eyebrow">Trayectoria en números</p><h2>Consistencia de ejecución</h2></div>
+      <div class="stats-grid"><article><strong data-count="5">0</strong><span>años de experiencia</span></article><article><strong data-count="40">0</strong><span>proyectos y experimentos</span></article><article><strong data-count="600">0</strong><span>iteraciones de producto*</span></article><article><strong data-count="1500">0</strong><span>deploys y pruebas*</span></article></div>
+      <p class="note">*Cifras aproximadas declaradas, basadas en la trayectoria acumulada de desarrollo, pruebas e iteraciones.</p>
     </section>
   </main>
 
-  <nav class="bottom-nav" aria-label="Navegación de la aplicación">
-    <button class="active" data-tab-target="inicio"><span>⌂</span><small>Inicio</small></button>
-    <button data-tab-target="proyectos"><span>▦</span><small>Apps</small></button>
-    <button data-tab-target="perfil"><span>◎</span><small>Perfil</small></button>
-    <button data-tab-target="estadisticas"><span>↗</span><small>Datos</small></button>
+  <nav class="mobile-tabs" aria-label="Navegación móvil">
+    <button data-target="inicio" class="active"><span>⌂</span>Inicio</button><button data-target="habilidades"><span>✦</span>Skills</button><button data-target="proyectos"><span>▦</span>Apps</button><button data-target="perfil"><span>◎</span>Perfil</button><button data-target="estadisticas"><span>↗</span>Datos</button>
   </nav>
+
+  <footer><span>Eduardo Micolta · Software Developer & AI Solutions</span><span>Linares, Chile · Permiso de trabajo vigente</span></footer>
 </body>
 </html>
