@@ -1,3 +1,8 @@
+const dynamicStyles=document.createElement('link');
+dynamicStyles.rel='stylesheet';
+dynamicStyles.href='projects-dynamic.css';
+document.head.appendChild(dynamicStyles);
+
 const menuButton=document.querySelector('.menu-button');
 const menu=document.querySelector('#menu');
 menuButton?.addEventListener('click',()=>{const isOpen=menu.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(isOpen))});
