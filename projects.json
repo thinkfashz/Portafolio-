@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "id": "soluciones-fabrick",
+      "name": "Soluciones Fabrick",
+      "category": "Producto principal",
+      "status": "Avanzado",
+      "description": "Plataforma web para servicios de construcción y mantenimiento. Conecta captación, presupuestos, catálogo, clientes, operación y experiencia comercial.",
+      "image": "",
+      "imageAlt": "Vista de Soluciones Fabrick",
+      "previewClass": "preview-fabrick",
+      "siteUrl": "https://solucionesfabrick.com",
+      "repoUrl": "https://github.com/thinkfashz/solucionfabrick2.5",
+      "technologies": ["Next.js", "React", "TypeScript", "Mercado Pago", "Playwright"],
+      "highlights": ["Flujo digital desde la consulta hasta la operación", "Presupuestos, productos, servicios y clientes", "Pruebas y validación de despliegues"],
+      "featured": true,
+      "published": true
+    },
+    {
+      "id": "omnifix",
+      "name": "Omnifix",
+      "category": "E-commerce",
+      "status": "Avanzado",
+      "description": "Tienda online de tecnología con catálogo, carrito, búsqueda, categorías, autenticación y experiencia responsive.",
+      "image": "",
+      "imageAlt": "Vista de Omnifix",
+      "previewClass": "preview-omnifix",
+      "siteUrl": "https://omnifixshop.vercel.app",
+      "repoUrl": "https://github.com/thinkfashz/omnifix",
+      "technologies": ["Next.js", "React", "Cloudflare", "Sentry", "Mercado Pago"],
+      "highlights": ["Catálogo y búsqueda de productos", "Carrito y pagos", "Administración y observabilidad"],
+      "featured": false,
+      "published": true
+    },
+    {
+      "id": "osart",
+      "name": "Osart",
+      "category": "Catálogo industrial",
+      "status": "Intermedio-avanzado",
+      "description": "Experiencia comercial para productos industriales con identidad visual, catálogo dinámico, fichas técnicas y ofertas.",
+      "image": "",
+      "imageAlt": "Vista de Osart",
+      "previewClass": "preview-osart",
+      "siteUrl": "",
+      "repoUrl": "https://github.com/thinkfashz/Osart",
+      "technologies": ["Next.js", "React", "TypeScript", "Supabase", "Google GenAI"],
+      "highlights": ["Catálogo dinámico", "Fichas técnicas", "Integración de datos e IA"],
+      "featured": false,
+      "published": true
+    },
+    {
+      "id": "vivazza",
+      "name": "Vivazza",
+      "category": "Food commerce",
+      "status": "Funcional",
+      "description": "Aplicación gastronómica con productos destacados, fichas detalladas, navegación móvil y experiencia de compra.",
+      "image": "",
+      "imageAlt": "Vista de Vivazza",
+      "previewClass": "preview-vivazza",
+      "siteUrl": "",
+      "repoUrl": "https://github.com/thinkfashz/vivazza",
+      "technologies": ["React", "TypeScript", "Vite", "Mobile first"],
+      "highlights": ["Experiencia móvil", "Presentación visual de productos", "Componentes reutilizables"],
+      "featured": false,
+      "published": true
+    }
+  ]
+}
