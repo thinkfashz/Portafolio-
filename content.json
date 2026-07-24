@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "eyebrow": "Full Stack Developer · IA",
+    "title": "Construyo productos digitales que funcionan.",
+    "lead": "Web, comercio y automatización."
+  },
+  "profile": {
+    "role": "Software Developer"
+  },
+  "projects": {
+    "heading": "Proyectos."
+  },
+  "contact": {
+    "heading": "Hagamos algo útil."
+  }
+}
