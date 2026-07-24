@@ -1,0 +1,10 @@
+{
+  "name":"Eduardo Micolta — Software Developer",
+  "short_name":"Eduardo",
+  "description":"Portafolio profesional de Eduardo Micolta, Software Developer y AI Solutions.",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#f4efe6",
+  "theme_color":"#11110f",
+  "icons":[{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
