@@ -13,16 +13,29 @@ menu?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+document.addEventListener('click', (event) => {
+  if (!menu?.contains(event.target) && !menuButton?.contains(event.target)) {
+    menu?.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+  }
+});
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
   },
   { threshold: 0.12 }
 );
 
-document.querySelectorAll('.project-card, .capabilities article, .stack-grid article').forEach((element) => {
-  element.classList.add('reveal');
-  observer.observe(element);
-});
+document
+  .querySelectorAll('.project-card, .more-projects a, .method-grid article, .capabilities article, .stack-grid article')
+  .forEach((element, index) => {
+    element.classList.add('reveal');
+    element.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
+    observer.observe(element);
+  });
