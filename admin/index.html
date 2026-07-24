@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Editor visual · Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <header class="admin-topbar">
+    <div><span class="dot"></span><b>Portfolio Studio</b><small>Editor por bloques</small></div>
+    <nav><a href="/" target="_blank">Ver sitio ↗</a><button id="resetButton" class="ghost">Restaurar</button><button id="exportButton">Exportar JSON</button></nav>
+  </header>
+
+  <main class="workspace">
+    <aside class="sidebar">
+      <p class="label">Secciones</p>
+      <button class="section-tab active" data-section="hero">Hero</button>
+      <button class="section-tab" data-section="profile">Perfil</button>
+      <button class="section-tab" data-section="projects">Proyectos</button>
+      <button class="section-tab" data-section="contact">Contacto</button>
+      <div class="notice"><b>React Bricks ready</b><p>Esta pantalla usa bloques editables y el mismo modelo de contenido. Para guardar directamente en producción se conecta la API de React Bricks.</p></div>
+    </aside>
+
+    <section class="editor-panel">
+      <div class="editor-heading"><div><p class="label">Contenido</p><h1 id="sectionTitle">Hero</h1></div><span id="saveState">Sin cambios</span></div>
+      <form id="contentForm">
+        <div class="fields" data-panel="hero">
+          <label>Etiqueta<input name="hero.eyebrow" maxlength="60"></label>
+          <label>Título<textarea name="hero.title" rows="3" maxlength="120"></textarea></label>
+          <label>Descripción<input name="hero.lead" maxlength="100"></label>
+        </div>
+        <div class="fields hidden" data-panel="profile">
+          <label>Cargo principal<input name="profile.role" maxlength="70"></label>
+        </div>
+        <div class="fields hidden" data-panel="projects">
+          <label>Título de sección<input name="projects.heading" maxlength="70"></label>
+          <p class="helper">Las tarjetas de proyectos continúan administrándose desde <code>projects.json</code>.</p>
+        </div>
+        <div class="fields hidden" data-panel="contact">
+          <label>Llamado final<textarea name="contact.heading" rows="3" maxlength="100"></textarea></label>
+        </div>
+      </form>
+    </section>
+
+    <section class="preview-panel">
+      <div class="preview-toolbar"><span>Vista previa</span><div><button data-width="100%">Desktop</button><button data-width="390px">Móvil</button></div></div>
+      <div class="preview-stage"><iframe id="previewFrame" src="/?preview=admin" title="Vista previa del portafolio"></iframe></div>
+    </section>
+  </main>
+</body>
+</html>
