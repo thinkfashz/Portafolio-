@@ -1,0 +1,28 @@
+{
+  "name": "eduardo-portfolio-v4",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@insforge/sdk": "latest",
+    "@supabase/supabase-js": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-bricks": "latest",
+    "react-dom": "latest",
+    "react-icons": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}
