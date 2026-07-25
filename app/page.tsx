@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Github, Mail, Sparkles, ExternalLink, Layers3, Zap, ShieldCheck } from 'lucide-react';
-import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiSupabase, SiVercel, SiOpenai, SiCloudflare, SiTailwindcss, SiPostgresql, SiGithub, SiFigma } from 'react-icons/si';
+import { ArrowUpRight, GithubIcon, Mail, Sparkles, ExternalLink, Layers3, Zap, ShieldCheck, Bot } from 'lucide-react';
+import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiSupabase, SiVercel, SiCloudflare, SiTailwindcss, SiPostgresql, SiGithub, SiFigma } from 'react-icons/si';
 
 const technologies = [
   ['React', SiReact], ['Next.js', SiNextdotjs], ['TypeScript', SiTypescript], ['Node.js', SiNodedotjs],
   ['InsForge', Sparkles], ['Supabase', SiSupabase], ['PostgreSQL', SiPostgresql], ['Tailwind', SiTailwindcss],
-  ['Vercel', SiVercel], ['Cloudflare', SiCloudflare], ['GitHub', SiGithub], ['Figma', SiFigma], ['OpenAI', SiOpenai],
+  ['Vercel', SiVercel], ['Cloudflare', SiCloudflare], ['GitHub', SiGithub], ['Figma', SiFigma], ['OpenAI', Bot],
 ] as const;
 
 const projects = [
@@ -62,7 +62,7 @@ export default function HomePage() {
         <div className="techGrid">{technologies.map(([name, Icon]) => <motion.div className="tech" key={name} whileHover={{ y: -4, scale: 1.01 }}><span className="techIcon"><Icon size={26}/></span><span>{name}</span></motion.div>)}</div>
       </section>
 
-      <section id="contacto" className="shell section"><div className="cta"><div><p className="eyebrow">Nuevo proyecto</p><h2>Construyamos algo que se vea bien y funcione mejor.</h2></div><div className="actions"><a className="button primary" href="mailto:f.eduardomicolta@gmail.com"><Mail size={17}/> Escribir</a><a className="button" href="https://github.com/thinkfashz" target="_blank" rel="noreferrer"><Github size={17}/> GitHub</a></div></div></section>
+      <section id="contacto" className="shell section"><div className="cta"><div><p className="eyebrow">Nuevo proyecto</p><h2>Construyamos algo que se vea bien y funcione mejor.</h2></div><div className="actions"><a className="button primary" href="mailto:f.eduardomicolta@gmail.com"><Mail size={17}/> Escribir</a><a className="button" href="https://github.com/thinkfashz" target="_blank" rel="noreferrer"><GithubIcon size={17}/> GitHub</a></div></div></section>
     </main>
   );
 }
