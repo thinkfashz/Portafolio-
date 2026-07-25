@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Mail, Sparkles, ExternalLink, Layers3, Zap, ShieldCheck, Bot } from 'lucide-react';
+import { ArrowUpRight, Mail, Sparkles, ExternalLink, Layers3, Zap, ShieldCheck, Bot, Home, BriefcaseBusiness, UserRound, Send, MapPin, CalendarDays } from 'lucide-react';
 import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiSupabase, SiVercel, SiCloudflare, SiTailwindcss, SiPostgresql, SiGithub, SiFigma } from 'react-icons/si';
 
 const technologies = [
@@ -22,24 +22,33 @@ const strengths = [
   [ShieldCheck, 'Base sólida', 'Arquitecturas pensadas para crecer y operar con confianza.'],
 ] as const;
 
+const experience = [
+  { role: 'Full Stack Developer', company: 'Proyectos independientes y productos propios', period: '2021 — Actualidad', text: 'Diseño y desarrollo aplicaciones web, SaaS, comercio electrónico y automatizaciones con foco en producto y negocio.' },
+  { role: 'Desarrollador de producto digital', company: 'Soluciones Fabrick · Omnifix · Osart', period: '2022 — Actualidad', text: 'Construcción de interfaces, flujos comerciales, integraciones, datos, despliegues y evolución continua de productos reales.' },
+  { role: 'Especialización aplicada', company: 'React · Next.js · TypeScript · IA', period: 'Formación continua', text: 'Aprendizaje autodidacta orientado a resolver problemas reales, mejorar arquitectura y acelerar entregas con inteligencia artificial.' },
+];
+
 export default function HomePage() {
+  const loopedTech = [...technologies, ...technologies];
   return (
     <main>
       <nav className="nav shell">
         <a className="brand" href="#top">EM<span>.</span></a>
-        <div className="navLinks"><a href="#proyectos">Proyectos</a><a href="#stack">Stack</a><a href="#contacto">Contacto</a><a className="adminNav" href="/admin">Admin</a></div>
+        <div className="navLinks"><a href="#perfil">Perfil</a><a href="#proyectos">Proyectos</a><a href="#stack">Stack</a><a href="#contacto">Contacto</a><a className="adminNav" href="/admin">Admin</a></div>
       </nav>
 
       <section id="top" className="hero shell">
-        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65 }}>
+        <motion.div className="heroCopy" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65 }}>
           <p className="eyebrow"><Sparkles size={15}/> Full Stack · IA · Producto</p>
           <h1>Creo software con <span>presencia, velocidad y criterio.</span></h1>
           <p className="lead">Aplicaciones modernas para vender, automatizar y convertir procesos complejos en experiencias simples.</p>
           <div className="actions"><a className="button primary" href="#proyectos">Ver proyectos <ArrowUpRight size={17}/></a><a className="button" href="mailto:f.eduardomicolta@gmail.com"><Mail size={17}/> Contactar</a></div>
           <div className="heroProof"><span>5+ años desarrollando</span><span>Productos reales</span><span>Chile</span></div>
         </motion.div>
+
         <motion.aside className="signalCard" initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: .15 }}>
           <div className="signalGlow" />
+          <div className="profileOrb"><span>EM</span></div>
           <span className="status">● Disponible</span><small>Eduardo Micolta</small><strong>Full Stack Developer</strong>
           <div className="facts"><p><span>Base</span> Linares, Chile</p><p><span>Enfoque</span> SaaS · E-commerce · IA</p><p><span>Stack</span> React · Next.js · InsForge</p></div>
         </motion.aside>
@@ -47,6 +56,23 @@ export default function HomePage() {
 
       <section className="shell strengths">
         {strengths.map(([Icon, title, text]) => <article key={title}><Icon size={20}/><div><h3>{title}</h3><p>{text}</p></div></article>)}
+      </section>
+
+      <section id="perfil" className="shell section profileSection">
+        <header className="sectionHead"><p className="eyebrow">Currículum</p><h2>Experiencia presentada como una historia de producto.</h2><p>Una vista rápida de mi recorrido, enfoque y forma de construir.</p></header>
+        <div className="resumeGrid">
+          <aside className="resumeSummary">
+            <div className="resumeAvatar">EM</div>
+            <h3>Eduardo Micolta</h3>
+            <p>Desarrollador Full Stack enfocado en aplicaciones modernas, automatización e inteligencia artificial aplicada.</p>
+            <div className="resumeMeta"><span><MapPin size={16}/> Linares, Chile</span><span><CalendarDays size={16}/> 5+ años desarrollando</span></div>
+          </aside>
+          <div className="timeline">
+            {experience.map((item, index) => <motion.article key={item.role} initial={{ opacity: 0, x: 18 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: index * .08 }}>
+              <span className="timelineDot"/><small>{item.period}</small><h3>{item.role}</h3><b>{item.company}</b><p>{item.text}</p>
+            </motion.article>)}
+          </div>
+        </div>
       </section>
 
       <section id="proyectos" className="shell section">
@@ -57,12 +83,14 @@ export default function HomePage() {
         </motion.article>)}</div>
       </section>
 
-      <section id="stack" className="shell section">
-        <header className="sectionHead"><p className="eyebrow">Tecnologías</p><h2>Un stack moderno, visible y bien organizado.</h2></header>
-        <div className="techGrid">{technologies.map(([name, Icon]) => <motion.div className="tech" key={name} whileHover={{ y: -4, scale: 1.01 }}><span className="techIcon"><Icon size={26}/></span><span>{name}</span></motion.div>)}</div>
+      <section id="stack" className="shell section stackSection">
+        <header className="sectionHead"><p className="eyebrow">Tecnologías</p><h2>Un carrusel vertical vivo y reconocible.</h2></header>
+        <div className="verticalCarousel"><div className="carouselMask top"/><div className="carouselTrack">{loopedTech.map(([name, Icon], index) => <div className="tech" key={`${name}-${index}`}><span className="techIcon"><Icon size={27}/></span><span>{name}</span></div>)}</div><div className="carouselMask bottom"/></div>
       </section>
 
       <section id="contacto" className="shell section"><div className="cta"><div><p className="eyebrow">Nuevo proyecto</p><h2>Construyamos algo que se vea bien y funcione mejor.</h2></div><div className="actions"><a className="button primary" href="mailto:f.eduardomicolta@gmail.com"><Mail size={17}/> Escribir</a><a className="button" href="https://github.com/thinkfashz" target="_blank" rel="noreferrer"><SiGithub size={17}/> GitHub</a></div></div></section>
+
+      <nav className="mobileDock" aria-label="Navegación móvil"><a href="#top"><Home size={20}/><span>Inicio</span></a><a href="#perfil"><UserRound size={20}/><span>Perfil</span></a><a href="#proyectos"><BriefcaseBusiness size={20}/><span>Proyectos</span></a><a href="#stack"><Sparkles size={20}/><span>Stack</span></a><a href="#contacto"><Send size={20}/><span>Contacto</span></a></nav>
     </main>
   );
 }
