@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './native.css';
 
 export const metadata: Metadata = {
   title: 'Eduardo Micolta — Full Stack & AI',
